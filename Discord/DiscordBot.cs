@@ -14,6 +14,8 @@ namespace Discord
 
         private readonly List<string> messagePrinzEugen;
 
+        private int count = 0;
+
         public DiscordBot()
         {
             var accessToken = File.ReadAllText("AccessToken.txt");
@@ -45,6 +47,8 @@ namespace Discord
             if (rand.Next(5) == 0)
             {
                 context.Channel.SendMessageAsync(messagePrinzEugen[rand.Next(rand.Next(messagePrinzEugen.Count))]);
+                count++;
+                Console.WriteLine($"{count}");
             }
         }
     }
