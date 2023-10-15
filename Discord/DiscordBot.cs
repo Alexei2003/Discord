@@ -44,7 +44,7 @@ namespace Discord
 
             command.ExecuteAsync(context, 0, null);
 
-            if (rand.Next(5) == 0)
+            if (rand.Next(20) == 0)
             {
                 context.Channel.SendMessageAsync(messagePrinzEugen[rand.Next(rand.Next(messagePrinzEugen.Count))]);
                 count++;
