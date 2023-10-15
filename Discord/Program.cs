@@ -13,6 +13,7 @@ namespace HelloWorld
 
             while (true)
             {
+                Thread.Sleep(TimeSpan.FromDays(1));
                 var a = discord.Equals(null);
             }
 
